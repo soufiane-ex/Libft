@@ -6,14 +6,14 @@
 /*   By: schahid <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 14:54:33 by schahid           #+#    #+#             */
-/*   Updated: 2021/11/11 15:18:02 by schahid          ###   ########.fr       */
+/*   Updated: 2021/11/16 18:18:33 by schahid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	while (lst != NULL)
+	while (lst && f)
 	{
 		(f)(lst->content);
 		lst = lst->next ;

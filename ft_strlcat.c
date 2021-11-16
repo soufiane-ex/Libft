@@ -6,12 +6,12 @@
 /*   By: schahid <schahid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:55:03 by schahid           #+#    #+#             */
-/*   Updated: 2021/11/09 12:32:37 by schahid          ###   ########.fr       */
+/*   Updated: 2021/11/16 18:14:46 by schahid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	int	i;
 	int	lens;
